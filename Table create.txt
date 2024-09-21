@@ -1,0 +1,139 @@
+CREATE TABLE Employees (
+    Emp_id NUMBER(5) PRIMARY KEY,
+    Emp_name VARCHAR2(255) NOT NULL,
+    Role VARCHAR2(255) NOT NULL,
+    Salary NUMBER(10,2) NOT NULL,
+    Address VARCHAR2(255) NOT NULL,
+    Phone_num VARCHAR2(15) NOT NULL
+);
+
+CREATE TABLE Employee_Hostel (
+    EH_id NUMBER(5) PRIMARY KEY,
+    Emp_id NUMBER(5) NOT NULL,
+    Hostel_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Emp_id) REFERENCES Employees(Emp_id),
+    FOREIGN KEY (Hostel_id) REFERENCES Hostels(Hostel_id)
+);
+
+CREATE TABLE Admins (
+    Admin_id NUMBER(5) PRIMARY KEY,
+    Admin_name VARCHAR2(255) NOT NULL,
+    Address VARCHAR2(255) NOT NULL,
+    Phone_num VARCHAR2(15) NOT NULL
+);
+
+CREATE TABLE Hostels (
+    Hostel_id NUMBER(5) PRIMARY KEY,
+    Hostel_name VARCHAR2(255) NOT NULL,
+    Address VARCHAR2(255) NOT NULL,
+    Num_of_rooms NUMBER(5) NOT NULL,
+    Num_of_students NUMBER(5) NOT NULL,
+    Admin_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Admin_id) REFERENCES Admins(Admin_id)
+);
+
+CREATE TABLE Payments (
+    Payment_id NUMBER(5) PRIMARY KEY,
+    Payment_type VARCHAR2(255) NOT NULL,
+    payment_Date DATE NOT NULL,
+    Total_bill NUMBER(5,2) NOT NULL
+);
+
+CREATE TABLE Hostel_Payment (
+    HP_id NUMBER(5) PRIMARY KEY,
+    Hostel_id NUMBER(5) NOT NULL,
+    Payment_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Hostel_id) REFERENCES Hostels(Hostel_id),
+    FOREIGN KEY (Payment_id) REFERENCES Payments(Payment_id)
+);
+
+CREATE TABLE Students (
+    Std_id NUMBER(5) PRIMARY KEY,
+    Std_name VARCHAR2(255) NOT NULL,
+    Phone_num VARCHAR2(15) NOT NULL,
+    Address VARCHAR2(255) NOT NULL,
+    Dept_name VARCHAR2(255) NOT NULL,
+    DA_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (DA_id) REFERENCES Date_of_Admission(DA_id)
+);
+
+CREATE TABLE Date_of_Admission (
+    DA_id NUMBER(5) PRIMARY KEY,
+    DOB DATE NOT NULL,
+    Age NUMBER(3) NOT NULL
+);
+
+CREATE TABLE Students_Hostels (
+    SH_id NUMBER(5) PRIMARY KEY,
+    Std_id NUMBER(5) NOT NULL,
+    Hostel_id NUMBER(5) NOT NULL,
+    DA_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Std_id) REFERENCES Students(Std_id),
+    FOREIGN KEY (Hostel_id) REFERENCES Hostels(Hostel_id),
+    FOREIGN KEY (DA_id) REFERENCES Date_of_Admission(DA_id)
+);
+
+CREATE TABLE Students_Rooms (
+    SR_id NUMBER(5) PRIMARY KEY,
+    Std_id NUMBER(5) NOT NULL,
+    Room_id NUMBER(5) NOT NULL,
+    DA_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Std_id) REFERENCES Students(Std_id),
+    FOREIGN KEY (Room_id) REFERENCES Rooms(Room_id),
+    FOREIGN KEY (DA_id) REFERENCES Date_of_Admission(DA_id)
+);
+
+CREATE TABLE Rooms (
+    Room_id NUMBER(5) PRIMARY KEY,
+    Room_type VARCHAR2(255) NOT NULL,
+    Hostel_id NUMBER(5) NOT NULL,
+    CR_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Hostel_id) REFERENCES Hostels(Hostel_id),
+    FOREIGN KEY (CR_id) REFERENCES Room_Capacity(CR_id)
+);
+
+CREATE TABLE Room_Capacity (
+    CR_id NUMBER(5) PRIMARY KEY,
+    Capacity NUMBER(3) NOT NULL,
+    Room_status VARCHAR2(50) NOT NULL
+);
+
+CREATE TABLE Visitors (
+    Visitor_id NUMBER(5) PRIMARY KEY,
+    Visitor_name VARCHAR2(255) NOT NULL,
+    Address VARCHAR2(255) NOT NULL,
+    Visit_date DATE NOT NULL,
+    Phone_num VARCHAR2(15) NOT NULL,
+    In_time TIMESTAMP NOT NULL,
+    Out_time TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE Furniture (
+    Furniture_id NUMBER(5) PRIMARY KEY,
+    Furniture_name VARCHAR2(255) NOT NULL,
+    Room_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Room_id) REFERENCES Rooms(Room_id)
+);
+
+CREATE TABLE Complaints (
+    Complain_id NUMBER(5) PRIMARY KEY,
+    Complain_date DATE NOT NULL,
+    Details CLOB NOT NULL
+);
+
+CREATE TABLE Admin_Complaint (
+    AC_id NUMBER(5) PRIMARY KEY,
+    Admin_id NUMBER(5) NOT NULL,
+    Complain_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Admin_id) REFERENCES Admins(Admin_id),
+    FOREIGN KEY (Complain_id) REFERENCES Complaints(Complain_id)
+);
+
+CREATE TABLE Student_Complaint (
+    SC_id NUMBER(5) PRIMARY KEY,
+    Std_id NUMBER(5) NOT NULL,
+    Complain_id NUMBER(5) NOT NULL,
+    FOREIGN KEY (Std_id) REFERENCES Students(Std_id),
+    FOREIGN KEY (Complain_id) REFERENCES Complaints(Complain_id)
+);
