@@ -1,0 +1,213 @@
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(1, 'John Doe', 'Manager', 5000.00, '123 Main St', '555-1234');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(2, 'Jane Smith', 'Assistant Manager', 4500.00, '456 Elm St', '555-5678');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(3, 'Alice Johnson', 'Secretary', 3000.00, '789 Oak St', '555-8765');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(4, 'Bob Brown', 'Technician', 3500.00, '321 Maple St', '555-4321');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(5, 'Charlie Davis', 'Engineer', 4000.00, '654 Pine St', '555-6789');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(6, 'David Wilson', 'Clerk', 2800.00, '987 Cedar St', '555-9876');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(7, 'Eve Thompson', 'Supervisor', 4200.00, '741 Birch St', '555-7410');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(8, 'Frank White', 'Guard', 2500.00, '852 Walnut St', '555-8523');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(9, 'Grace Hall', 'Accountant', 3800.00, '963 Ash St', '555-9632');
+INSERT INTO Employees (Emp_id, Emp_name, Role, Salary, Address, Phone_num) VALUES(10, 'Henry King', 'Driver', 2700.00, '159 Cherry St', '555-1590');
+select *from employees
+
+
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(1, 'Paul Adams', '111 Admin St', '555-1001');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(2, 'Laura Baker', '222 Admin St', '555-1002');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(3, 'Megan Carter', '333 Admin St', '555-1003');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(4, 'Ryan Dean', '444 Admin St', '555-1004');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(5, 'Sara Evans', '555 Admin St', '555-1005');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(6, 'Tom Foster', '666 Admin St', '555-1006');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(7, 'Nina Green', '777 Admin St', '555-1007');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(8, 'Oliver Harris', '888 Admin St', '555-1008');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(9, 'Patricia Jones', '999 Admin St', '555-1009');
+INSERT INTO Admins (Admin_id, Admin_name, Address, Phone_num) VALUES(10, 'Robert Kelly', '101 Admin St', '555-1010');
+select *from Admins
+
+
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(1, 'Hostel A', '1 Hostel Rd', 50, 200, 1);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(2, 'Hostel B', '2 Hostel Rd', 45, 180, 2);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(3, 'Hostel C', '3 Hostel Rd', 60, 240, 3);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(4, 'Hostel D', '4 Hostel Rd', 55, 220, 4);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(5, 'Hostel E', '5 Hostel Rd', 50, 200, 5);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(6, 'Hostel F', '6 Hostel Rd', 40, 160, 6);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(7, 'Hostel G', '7 Hostel Rd', 35, 140, 7);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(8, 'Hostel H', '8 Hostel Rd', 45, 180, 8);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(9, 'Hostel I', '9 Hostel Rd', 60, 240, 9);
+INSERT INTO Hostels (Hostel_id, Hostel_name, Address, Num_of_rooms, Num_of_students, Admin_id) VALUES(10, 'Hostel J', '10 Hostel Rd', 55, 220, 10);
+select * from hostels 
+
+
+
+98INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(1, 'Credit Card', TO_DATE('2024-01-01', 'YYYY-MM-DD'), 500.00;,
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(2, 'Debit Card', TO_DATE('2024-01-05', 'YYYY-MM-DD'), 600.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(3, 'Cash', TO_DATE('2024-02-01', 'YYYY-MM-DD'), 450.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(4, 'Check', TO_DATE('2024-03-01', 'YYYY-MM-DD'), 700.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(5, 'Bank Transfer', TO_DATE('2024-04-01', 'YYYY-MM-DD'), 800.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(6, 'Credit Card', TO_DATE('2024-05-01', 'YYYY-MM-DD'), 900.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(7, 'Debit Card', TO_DATE('2024-06-01', 'YYYY-MM-DD'), 750.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(8, 'Cash', TO_DATE('2024-07-01', 'YYYY-MM-DD'), 850.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(9, 'Check', TO_DATE('2024-08-01', 'YYYY-MM-DD'), 950.00);
+INSERT INTO Payments (Payment_id, Payment_type, payment_Date, Total_bill) VALUES(10, 'Bank Transfer', TO_DATE('2024-09-01', 'YYYY-MM-DD'), 980.00);
+select *from payments
+
+
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(1, TO_DATE('2000-01-01', 'YYYY-MM-DD'), 24);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(2, TO_DATE('2001-02-02', 'YYYY-MM-DD'), 23);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(3, TO_DATE('2002-03-03', 'YYYY-MM-DD'), 22);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(4, TO_DATE('2003-04-04', 'YYYY-MM-DD'), 21);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(5, TO_DATE('2004-05-05', 'YYYY-MM-DD'), 20);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(6, TO_DATE('2005-06-06', 'YYYY-MM-DD'), 19);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(7, TO_DATE('2006-07-07', 'YYYY-MM-DD'), 18);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(8, TO_DATE('2007-08-08', 'YYYY-MM-DD'), 17);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(9, TO_DATE('2008-09-09', 'YYYY-MM-DD'), 16);
+INSERT INTO Date_of_Admission (DA_id, DOB, Age) VALUES(10, TO_DATE('2009-10-10', 'YYYY-MM-DD'), 15);
+select *from Date_of_Admission
+
+
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(1, 'Liam Smith', '555-2001', '10 Student St', 'Computer Science', 1);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(2, 'Emma Johnson', '555-2002', '20 Student St', 'Electrical Engineering', 2);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(3, 'Noah Williams', '555-2003', '30 Student St', 'Mechanical Engineering', 3);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(4, 'Olivia Brown', '555-2004', '40 Student St', 'Civil Engineering', 4);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(5, 'William Jones', '555-2005', '50 Student St', 'Chemical Engineering', 5);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(6, 'Ava Garcia', '555-2006', '60 Student St', 'Biomedical Engineering', 6);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(7, 'James Martinez', '555-2007', '70 Student St', 'Aerospace Engineering', 7);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(8, 'Isabella Rodriguez', '555-2008', '80 Student St', 'Environmental Engineering', 8);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(9, 'Benjamin Wilson', '555-2009', '90 Student St', 'Software Engineering', 9);
+INSERT INTO Students (Std_id, Std_name, Phone_num, Address, Dept_name, DA_id) VALUES(10, 'Mia Anderson', '555-2010', '100 Student St', 'Material Science', 10);
+select * from students
+
+
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(1, 1, 'Available');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(2, 2, 'Occupied');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(3, 3, 'Available');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(4, 4, 'Occupied');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(5, 1, 'Available');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(6, 2, 'Occupied');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(7, 3, 'Available');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(8, 4, 'Occupied');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(9, 1, 'Available');
+INSERT INTO Room_Capacity (CR_id, Capacity, Room_status) VALUES(10, 2, 'Occupied');
+select *from Room_Capacity
+
+
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(1, 'Single', 1, 1);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(2, 'Double', 1, 2);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(3, 'Triple', 2, 3);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(4, 'Quad', 2, 4);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(5, 'Single', 3, 1);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(6, 'Double', 3, 2);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(7, 'Triple', 4, 3);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(8, 'Quad', 4, 4);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(9, 'Single', 5, 1);
+INSERT INTO Rooms (Room_id, Room_type, Hostel_id, CR_id) VALUES(10, 'Double', 5, 2);
+select * from rooms
+
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES (1, 'Chris Taylor', '101 Visitor Ln', TO_DATE('2024-01-15', 'YYYY-MM-DD'), '555-3001', TO_TIMESTAMP('2024-01-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2024-01-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(2, 'Pat Morgan', '102 Visitor Ln', TO_DATE('2024-02-16', 'YYYY-MM-DD'), '555-3002', TO_TIMESTAMP('2024-02-16 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-02-16 13:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(3, 'Jordan Lee', '103 Visitor Ln', TO_DATE('2024-03-17', 'YYYY-MM-DD'), '555-3003', TO_TIMESTAMP('2024-03-17 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-03-17 14:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(4, 'Sam Taylor', '104 Visitor Ln', TO_DATE('2024-04-18', 'YYYY-MM-DD'), '555-3004', TO_TIMESTAMP('2024-04-18 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-04-18 15:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(5, 'Alex Morgan', '105 Visitor Ln', TO_DATE('2024-05-19', 'YYYY-MM-DD'), '555-3005', TO_TIMESTAMP('2024-05-19 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-05-19 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(6, 'Drew Lee', '106 Visitor Ln', TO_DATE('2024-06-20', 'YYYY-MM-DD'), '555-3006', TO_TIMESTAMP('2024-06-20 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-06-20 17:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(7, 'Taylor Chris', '107 Visitor Ln', TO_DATE('2024-07-21', 'YYYY-MM-DD'), '555-3007', TO_TIMESTAMP('2024-07-21 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-07-21 18:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(8, 'Morgan Pat', '108 Visitor Ln', TO_DATE('2024-08-22', 'YYYY-MM-DD'), '555-3008', TO_TIMESTAMP('2024-08-22 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-08-22 19:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(9, 'Lee Jordan', '109 Visitor Ln', TO_DATE('2024-09-23', 'YYYY-MM-DD'), '555-3009', TO_TIMESTAMP('2024-09-23 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-09-23 20:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO Visitors (Visitor_id, Visitor_name, Address, Visit_date, Phone_num, In_time, Out_time) VALUES(10, 'Taylor Sam', '110 Visitor Ln', TO_DATE('2024-10-24', 'YYYY-MM-DD'), '555-3010', TO_TIMESTAMP('2024-10-24 19:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-10-24 21:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+select * from visitors
+
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(1, 'Bed', 1);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(2, 'Table', 2);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(3, 'Chair', 3);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(4, 'Wardrobe', 4);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(5, 'Desk', 5);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(6, 'Sofa', 6);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(7, 'Lamp', 7);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(8, 'Bookshelf', 8);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(9, 'Dresser', 9);
+INSERT INTO Furniture (Furniture_id, Furniture_name, Room_id) VALUES(10, 'Mirror', 10);
+select *from furniture
+
+
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(1, TO_DATE('2024-01-10', 'YYYY-MM-DD'), 'Water leakage in room');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(2, TO_DATE('2024-02-11', 'YYYY-MM-DD'), 'Electricity issue in hall');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(3, TO_DATE('2024-03-12', 'YYYY-MM-DD'), 'Food quality problem in mess');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(4, TO_DATE('2024-04-13', 'YYYY-MM-DD'), 'Noise problem during night');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(5, TO_DATE('2024-05-14', 'YYYY-MM-DD'), 'AC not working in room');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(6, TO_DATE('2024-06-15', 'YYYY-MM-DD'), 'Internet connectivity issue');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(7, TO_DATE('2024-07-16', 'YYYY-MM-DD'), 'Broken furniture in common area');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(8, TO_DATE('2024-08-17', 'YYYY-MM-DD'), 'Unclean washrooms');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(9, TO_DATE('2024-09-18', 'YYYY-MM-DD'), 'Lighting issue in study room');
+INSERT INTO Complaints (Complain_id, Complain_date, Details) VALUES(10, TO_DATE('2024-10-19', 'YYYY-MM-DD'), 'Security concerns in hostel premises');
+select *from complaints
+
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES(1, 1, 1);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES(2, 2, 2);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (3, 3, 3);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (4, 4, 4);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (5, 5, 5);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (6, 6, 6);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (7, 7, 7);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (8, 8, 8);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (9, 9, 9);
+INSERT INTO Employee_Hostel (EH_id, Emp_id, Hostel_id) VALUES (10, 10, 10);
+select * from Employee_Hostel  
+
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES (1, 1, 1);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(2, 2, 2);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(3, 3, 3);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(4, 4, 4);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(5, 5, 5);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(6, 6, 6);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(7, 7, 7);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(8, 8, 8);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(9, 9, 9);
+INSERT INTO Hostel_Payment (HP_id, Hostel_id, Payment_id) VALUES(10, 10, 10);
+select * from Hostel_payment
+
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(1, 1, 1, 1);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(2, 2, 2, 2);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(3, 3, 3, 3);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(4, 4, 4, 4);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(5, 5, 5, 5);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(6, 6, 6, 6);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(7, 7, 7, 7);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(8, 8, 8, 8);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(9, 9, 9, 9);
+INSERT INTO Students_Hostels (SH_id, Std_id, Hostel_id, DA_id) VALUES(10, 10, 10, 10);
+select *from students_hostels
+
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(1, 1, 1, 1);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(2, 2, 2, 2);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(3, 3, 3, 3);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(4, 4, 4, 4);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(5, 5, 5, 5);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(6, 6, 6, 6);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(7, 7, 7, 7);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(8, 8, 8, 8);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(9, 9, 9, 9);
+INSERT INTO Students_Rooms (SR_id, Std_id, Room_id, DA_id) VALUES(10, 10, 10, 10);
+select *from Students_Rooms
+
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(1, 1, 1);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(2, 2, 2);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(3, 3, 3);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(4, 4, 4);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(5, 5, 5);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(6, 6, 6);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(7, 7, 7);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(8, 8, 8);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(9, 9, 9);
+INSERT INTO Admin_Complaint (AC_id, Admin_id, Complain_id) VALUES(10, 10, 10);
+select *from  Admin_Complaint
+
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(1, 1, 1);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(2, 2, 2);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(3, 3, 3);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(4, 4, 4);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(5, 5, 5);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(6, 6, 6);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(7, 7, 7);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(8, 8, 8);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(9, 9, 9);
+INSERT INTO Student_Complaint (SC_id, Std_id, Complain_id) VALUES(10, 10, 10);
+select * from Student_Complaint
+
